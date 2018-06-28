@@ -1,2 +1,5 @@
+dist/
 vendor/
-composer.lock
+.gh_token
+*.min.*
+
