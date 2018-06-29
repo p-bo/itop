@@ -39,7 +39,7 @@
 define("PLUGIN_ITOP_VERSION", "1.3");
 
 // Minimal GLPI version, inclusive
-define("PLUGIN_ITOP_MIN_GLPI", "9.1.1");
+define("PLUGIN_ITOP_MIN_GLPI", "9.2");
 // Maximum GLPI version, exclusive
 define("PLUGIN_ITOP_MAX_GLPI", "9.3");
 
@@ -87,13 +87,13 @@ function plugin_version_itop() {
                  'author'         => "<a href='www.teclib.com'>TECLIB'</a>",
                  'homepage'       => 'https://github.com/teclib/itop',
                  'license'        => "MIT",
-                 'minGlpiVersion' => '9.1.1'];
+                 'minGlpiVersion' => PLUGIN_ITOP_MIN_GLPI];
 }
 
 // Optional : check prerequisites before install : may print errors or add to message after redirect
 function plugin_itop_check_prerequisites() {
    if (version_compare(GLPI_VERSION, PLUGIN_ITOP_MIN_GLPI, 'lt') || version_compare(GLPI_VERSION, PLUGIN_ITOP_MAX_GLPI, 'ge')) {
-      echo "This plugin requires GLPI 9.1.1 or higher";
+      echo "This plugin requires GLPI 9.2 or higher";
       return false;
    }
    return true;

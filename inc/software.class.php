@@ -94,7 +94,7 @@ class PluginItopSoftware extends CommonDBTM {
    static function install(Migration $migration) {
       global $DB;
       $table = getTableForItemType(__CLASS__);
-      if (!TableExists($table)) {
+      if (!$DB->tableExists($table)) {
          $query = "CREATE TABLE IF NOT EXISTS `$table` (
               `id` int(11) NOT NULL AUTO_INCREMENT,
               `softwares_id` int(11) NOT NULL DEFAULT '0',

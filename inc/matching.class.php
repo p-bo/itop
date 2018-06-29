@@ -65,7 +65,7 @@ class PluginItopMatching extends CommonDBTM {
    static function install(Migration $migration) {
       global $DB;
       $table = getTableForItemType(__CLASS__);
-      if (!TableExists($table)) {
+      if (!$DB->tableExists($table)) {
          $query = "CREATE TABLE IF NOT EXISTS `$table` (
               `id` int(11) NOT NULL AUTO_INCREMENT,
               `itemtype` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
