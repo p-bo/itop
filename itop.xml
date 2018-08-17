@@ -9,11 +9,13 @@
          <!-- Add as many lang tag you want -->
          <en>GLPI Plugin to send inventory data to iTop CMDB</en>
          <fr>Plugin GLPI pour envoyer les informations d'inventaire dans la CMDB iTop</fr>
+         <cs>GLPI zásuvný modul pro posílání dat inventáře do iTop CMDB</cs>
       </short>
       <long>
          <!-- Add as many lang tag you want -->
          <en>GLPI Plugin to send inventory data to iTop CMDB</en>
          <fr>Plugin GLPI pour envoyer les informations d'inventaire dans la CMDB iTop</fr>
+         <cs>GLPI zásuvný modul pro posílání dat inventáře do iTop CMDB</cs>
       </long>
    </description>
    <homepage>https://github.com/pluginsGLPI/itop</homepage>
@@ -37,6 +39,7 @@
       <!-- Add as many lang tag you want -->
       <lang>en_GB</lang>
       <lang>fr_FR</lang>
+      <lang>cs_CZ</lang>
    </langs>
    <license>GPL V3+</license>
    <!--tags>
